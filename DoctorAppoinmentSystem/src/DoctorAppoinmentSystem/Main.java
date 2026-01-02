@@ -11,7 +11,7 @@ public class Main {
         patient1.setSymptoms(sc.nextLine());
         System.out.println("Enter doctor type for Patient 1:");
         patient1.setDoctorType(sc.nextLine());
-        if (patient1.getDoctorType().equalsIgnoreCase("General")) {
+        if (patient1.getDoctorType()=="General") {
             GeneralDoctor gd1 = new GeneralDoctor("A101", patient1);
             patient1.setGeneralDoctor(gd1);
             gd1.bookAppointment();
@@ -38,7 +38,7 @@ public class Main {
         patient2.setSymptoms(sc.nextLine());
         System.out.println("Enter doctor type for Patient 2:");
         patient2.setDoctorType(sc.nextLine());
-        if (patient2.getDoctorType().equalsIgnoreCase("General")) {
+        if (patient2.getDoctorType()=="General") {
 
             GeneralDoctor gd2 = new GeneralDoctor("A101", patient2);
             patient2.setGeneralDoctor(gd2);
